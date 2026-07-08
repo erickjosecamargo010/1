@@ -1,18 +1,48 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CR7: O Maior de Todos os Tempos</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>CR7 melhor que messi</h1>
-        <p>motivos do por que CR7 e melhor que messi</p>
-    </header>
-    <main>
-        <h2>para baixo </h2>
-        <p>texto mais detalhado sobre o assunto</p>
-    </main>
+
+    <button class="btn-curtir" onclick="curtir Conteudo()">
+        ❤️ <span id="contador-curtidas">0</span>
+    </button>
+
+    <div class="container">
+        <header>
+            <h1>Por que Cristiano Ronaldo é o GOAT?</h1>
+            <p class="subtitulo">A ciência e os fatos por trás do robozão</p>
+        </header>
+
+        <main>
+            <div class="imagem-container">
+                <img src="https://images.unsplash.com/photo-1626248911475-7b0c961ba30c?q=80&w=600" alt="Cristiano Ronaldo comemorando">
+            </div>
+
+            <article class="conteudo-blog">
+                <h2>Fatos incontestáveis vs. Opinião</h2>
+                <p>Enquanto muitos argumentam sobre o talento natural de Lionel Messi, Cristiano Ronaldo prova que a determinação, o foco e o trabalho duro constroem o atleta perfeito. CR7 não é apenas um jogador de futebol; ele é uma máquina de quebrar recordes em múltiplas ligas.</p>
+                
+                <h3>3 Razões que o tornam superior:</h3>
+                <ul>
+                    <li><strong>Dinamismo em várias ligas:</strong> Provou seu valor e foi campeão na Inglaterra, Espanha e Itália.</li>
+                    <li><strong>O Rei da Champions:</strong> Maior artilheiro da história da maior competição de clubes do mundo.</li>
+                    <li><strong>Mentalidade Competitiva:</strong> Capacidade de decidir jogos sob extrema pressão de forma consistente.</li>
+                </ul>
+            </article>
+        </main>
+    </div>
+
+    <script>
+        let curtidas = 0;
+        function curtirConteudo() {
+            curtidas++;
+            document.getElementById('contador-curtidas').innerText = curtidas;
+        }
+    </script>
 </body>
 </html>
